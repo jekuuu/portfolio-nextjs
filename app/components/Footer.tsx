@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center dark:bg-zinc-900 p-3">
+    <footer className="flex justify-center dark:bg-zinc-900 p-3 mt-5">
       <p>Jekib Alam Haque &copy; 2024</p>
     </footer>
   );

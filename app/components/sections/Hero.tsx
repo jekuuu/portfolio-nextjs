@@ -17,7 +17,7 @@ const HeroSection = () => {
           <a
             href="/resume/resume.pdf"
             download={"Jekib Alam Haque Resume.pdf"}
-            className="mt-10 border p-5 shadow-lg w-48 hover:shadow-slate-500 hover:scale-105 hover:bg-gradient-to-r hover:from-gray-700 hover:via-gray-900 hover:to-black"
+            className="mt-10 border p-5 shadow-xl w-48 hover:shadow-slate-700 hover:scale-105 hover:bg-gradient-to-r hover:from-gray-700 hover:via-gray-900 hover:to-black"
           >
             Download Resume
           </a>
