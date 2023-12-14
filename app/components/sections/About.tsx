@@ -17,6 +17,7 @@ const About = () => {
         </div>
 
         <div className="col-span-12 md:col-span-8 mt-5 md:mt-0">
+          <h2 className="text-5xl mb-3">About</h2>
           <p>
             As a Senior Engineering Lead at Persistent Systems, I develop and
             design web applications for clients using cutting-edge technologies
