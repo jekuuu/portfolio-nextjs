@@ -36,7 +36,7 @@ export const experiences = [
     company: "Synechron (Client- HSBC)",
     iconBg: "#FFF",
     logo: "/images/synechron.png",
-    date: "July 2021 — November 2022",
+    date: "November 2019 — July 2021",
     points: [
       "Transformed HSBC's outdated Trade Finance application into a contemporary web app with React JS, Redux, and Node JS",
       "Established and maintained a shared component library using Storybook, utilized company-wide",
