@@ -9,8 +9,8 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   return (
-    <>
-      <h2 className="text-5xl mb-24 flex justify-center">Work Experience</h2>
+    <section className="md:h-[100vh] md:pt-12 mx-auto container">
+      <h2 className="text-5xl my-24 flex justify-center">Work Experience</h2>
       <VerticalTimeline animate>
         {experiences.map((experience) => (
           <VerticalTimelineElement
@@ -61,7 +61,7 @@ const Experience = () => {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-    </>
+    </section>
   );
 };
 

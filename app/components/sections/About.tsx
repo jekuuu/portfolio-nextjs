@@ -1,11 +1,10 @@
 import Image from "next/image";
-import React from "react";
 
 const About = () => {
   return (
-    <section className="h-[100vh] pt-12 mx-auto container">
+    <section className="md:h-[100vh] pt-12 mx-auto container">
       <div className="grid grid-cols-12 mx-7">
-        <div className="col-span-4">
+        <div className="col-span-12 md:col-span-4">
           <Image
             src={"/images/profile.jpg"}
             alt="profile"
