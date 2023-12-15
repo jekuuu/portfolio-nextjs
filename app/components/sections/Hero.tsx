@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <section className="md:h-[100vh] md:pt-12 mx-7 flex flex-col justify-center">
       <h1 className="text-7xl pt-40">
@@ -30,7 +30,7 @@ const HeroSection = () => {
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="text-3xl shadow-xl hover:shadow-slate-700 hover:scale-105"
+            className="text-3xl shadow-xl hover:shadow-slate-700 hover:scale-110"
           />
         </Link>
         <Link
@@ -40,7 +40,7 @@ const HeroSection = () => {
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className="text-3xl shadow-xl hover:shadow-slate-700 hover:scale-105"
+            className="text-3xl shadow-xl hover:shadow-slate-700 hover:scale-110"
           />
         </Link>
       </div>
@@ -48,4 +48,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;
