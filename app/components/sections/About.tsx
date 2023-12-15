@@ -28,7 +28,7 @@ const About = () => {
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, transition: { duration: 1.5 }, x: 0 }}
       >
-        <motion.h2 className="text-5xl mb-3">About</motion.h2>
+        <motion.h2 className="text-5xl mb-5">About</motion.h2>
         <p>
           As a Senior Engineering Lead at Persistent Systems, I develop and
           design web applications for clients using cutting-edge technologies
