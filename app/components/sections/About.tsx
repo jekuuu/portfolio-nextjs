@@ -1,9 +1,19 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const About = () => {
   return (
     <section className="md:h-[70vh] mt-12 mx-7 grid grid-cols-12">
-      <div className="col-span-12 md:col-span-4">
+      <motion.div
+        className="col-span-12 md:col-span-4"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{
+          opacity: 1,
+          transition: { duration: 1.5 },
+          x: 0,
+        }}
+      >
         <Image
           src={"/images/profile.jpg"}
           alt="profile"
@@ -12,9 +22,13 @@ const About = () => {
           quality={10}
           className="w-4/5 rounded-2xl shadow-2xl shadow-slate-700"
         />
-      </div>
-      <div className="col-span-12 md:col-span-8 mt-5 md:mt-0">
-        <h2 className="text-5xl mb-3">About</h2>
+      </motion.div>
+      <motion.div
+        className="col-span-12 md:col-span-8 mt-5 md:mt-0"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, transition: { duration: 1.5 }, x: 0 }}
+      >
+        <motion.h2 className="text-5xl mb-3">About</motion.h2>
         <p>
           As a Senior Engineering Lead at Persistent Systems, I develop and
           design web applications for clients using cutting-edge technologies
@@ -38,7 +52,7 @@ const About = () => {
           user-friendly, scalable, and secure web solutions that meet the needs
           and expectations of the clients.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };

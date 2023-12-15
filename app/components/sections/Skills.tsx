@@ -1,4 +1,6 @@
+"use client";
 import { technologies } from "@/app/constants";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Skills = () => {
@@ -7,7 +9,14 @@ const Skills = () => {
       <h2 className="text-5xl mb-3">Skills</h2>
       <div className="mt-12 grid grid-cols-12">
         {technologies.map((technology) => (
-          <div key={technology.id} className="col-span-3 md:col-span-1">
+          <motion.div
+            key={technology.id}
+            className="col-span-3 md:col-span-1"
+            whileHover={{
+              scale: 1.2,
+              transition: { duration: 0.5 },
+            }}
+          >
             <Image
               src={technology.icon}
               alt={technology.name}
@@ -15,7 +24,7 @@ const Skills = () => {
               height={90}
               className="w-20 md:w-20"
             />
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
