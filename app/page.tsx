@@ -1,14 +1,19 @@
-import { HeroSection, SkillsSection } from "./components/sections";
-import About from "./components/sections/About";
-import Experience from "./components/sections/Experience";
+import {
+  AboutSection,
+  ContactSection,
+  ExperienceSection,
+  HeroSection,
+  SkillsSection,
+} from "./components/sections";
 
 export default function Home() {
   return (
     <main className="container mx-auto">
       <HeroSection />
-      <About />
+      <AboutSection />
       <SkillsSection />
-      <Experience />
+      <ExperienceSection />
+      {/* <ContactSection /> */}
     </main>
   );
 }

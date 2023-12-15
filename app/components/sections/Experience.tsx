@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   return (
-    <section className="md:h-[100vh] md:pt-12 mx-auto">
+    <section className="md:pt-12 mx-auto">
       <h2 className="text-5xl my-24 flex justify-center">Work Experience</h2>
       <VerticalTimeline>
         {experiences.map((experience) => (
