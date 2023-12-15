@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   return (
-    <section className="md:h-[100vh] md:pt-12 mx-auto container">
+    <section className="md:h-[100vh] md:pt-12 mx-auto">
       <h2 className="text-5xl my-24 flex justify-center">Work Experience</h2>
       <VerticalTimeline>
         {experiences.map((experience) => (
@@ -28,13 +28,12 @@ const Experience = () => {
             icon={
               <motion.div
                 className="flex justify-center items-center w-full h-full"
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 0, scale: 0.1 }}
                 whileInView={{
                   opacity: 1,
+                  scale: 1,
                   transition: {
-                    duration: 1.5, // Animation duration
-                    type: "spring",
-                    bounce: 0.6,
+                    duration: 0.7,
                   },
                 }}
               >
