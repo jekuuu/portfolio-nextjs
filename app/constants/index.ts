@@ -1,14 +1,16 @@
 export const technologies = [
-  { id: 111, name: "React JS", icon: "/images/tech/react.png" },
-  { id: 112, name: "Redux Toolkit", icon: "/images/tech/redux.png" },
-  { id: 113, name: "JavaScript", icon: "/images/tech/javascript.png" },
-  { id: 114, name: "TypeScript", icon: "/images/tech/typescript.png" },
-  { id: 115, name: "Node JS", icon: "/images/tech/nodejs.png" },
-  { id: 116, name: "HTML 5", icon: "/images/tech/html.png" },
-  { id: 117, name: "Tailwind CSS", icon: "/images/tech/tailwind.png" },
-  { id: 118, name: "CSS 3", icon: "/images/tech/css.png" },
-  { id: 119, name: "Git", icon: "/images/tech/git.png" },
-  { id: 110, name: "Docker", icon: "/images/tech/docker.png" },
+  { id: 1, name: "React JS", icon: "/images/tech/react.png" },
+  { id: 2, name: "Redux Toolkit", icon: "/images/tech/redux.png" },
+  { id: 3, name: "JavaScript", icon: "/images/tech/javascript.png" },
+  { id: 4, name: "TypeScript", icon: "/images/tech/typescript.png" },
+  { id: 5, name: "Node JS", icon: "/images/tech/nodejs.png" },
+  { id: 6, name: "HTML 5", icon: "/images/tech/html.png" },
+  { id: 7, name: "Tailwind CSS", icon: "/images/tech/tailwind.png" },
+  { id: 8, name: "CSS 3", icon: "/images/tech/css.png" },
+  { id: 9, name: "Git", icon: "/images/tech/git.png" },
+  { id: 10, name: "Docker", icon: "/images/tech/docker.png" },
+  { id: 11, name: "Webpack", icon: "/images/tech/webpack.png" },
+  { id: 12, name: "Kubernetes", icon: "/images/tech/kubernetes.png" },
 ];
 
 export const experiences = [

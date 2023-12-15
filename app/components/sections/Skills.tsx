@@ -22,7 +22,7 @@ const Skills = () => {
       <div className="mt-12 grid grid-cols-12">
         {technologies.map((technology, index) => (
           <motion.div
-            key={technology.id}
+            key={`tech-${technology.id}`}
             className="col-span-3 md:col-span-1"
             initial={{ opacity: 0, y: -100 }}
             whileInView={{
