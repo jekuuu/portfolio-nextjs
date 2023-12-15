@@ -1,9 +1,22 @@
+export const technologies = [
+  { id: 111, name: "React JS", icon: "/images/tech/react.png" },
+  { id: 112, name: "Redux Toolkit", icon: "/images/tech/redux.png" },
+  { id: 113, name: "JavaScript", icon: "/images/tech/javascript.png" },
+  { id: 114, name: "TypeScript", icon: "/images/tech/typescript.png" },
+  { id: 115, name: "Node JS", icon: "/images/tech/nodejs.png" },
+  { id: 116, name: "HTML 5", icon: "/images/tech/html.png" },
+  { id: 117, name: "Tailwind CSS", icon: "/images/tech/tailwind.png" },
+  { id: 118, name: "CSS 3", icon: "/images/tech/css.png" },
+  { id: 119, name: "Git", icon: "/images/tech/git.png" },
+  { id: 110, name: "Docker", icon: "/images/tech/docker.png" },
+];
+
 export const experiences = [
   {
     id: 1,
     title: "Senior Engineering Lead",
     company: "Peristent Systems (Client- Wayfair)",
-    logo: "/images/persistent.png",
+    logo: "/images/companies/persistent.png",
     iconBg: "#FFF",
     date: "Feb 2023 - December 2023",
     points: [
@@ -19,7 +32,7 @@ export const experiences = [
     id: 2,
     title: "Associate",
     company: "MSCI (Morgan Stanley Capital International)",
-    logo: "/images/msci.png",
+    logo: "/images/companies/msci.png",
     iconBg: "#FFF",
     date: "July 2021 — November 2022",
     points: [
@@ -35,7 +48,7 @@ export const experiences = [
     title: "Senior Associate Technology",
     company: "Synechron (Client- HSBC)",
     iconBg: "#FFF",
-    logo: "/images/synechron.png",
+    logo: "/images/companies/synechron.png",
     date: "November 2019 — July 2021",
     points: [
       "Transformed HSBC's outdated Trade Finance application into a contemporary web app with React JS, Redux, and Node JS",
@@ -52,7 +65,7 @@ export const experiences = [
     title: "Senior Consultant",
     company: "Alchemy Techsol (Client- Allstate)",
     iconBg: "#FFF",
-    logo: "/images/alchemy.jpg",
+    logo: "/images/companies/alchemy.jpg",
     date: "March 2019 — November 2019",
     points: [
       "Created a web application tailored for car dealers throughout the United States, utilizing React JS, Redux, and Bootstrap",
@@ -67,7 +80,7 @@ export const experiences = [
     title: "Associate Consultant",
     company: "Capgemini",
     iconBg: "#FFF",
-    logo: "/images/capgemini.png",
+    logo: "/images/companies/capgemini.png",
     date: "April 2016 — March 2019",
     points: [
       "Contributed to the development of web APIs for the system using .NET Core",

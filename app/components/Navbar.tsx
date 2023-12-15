@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header className="flex justify-around p-5 mb-5 dark:bg-zinc-900">
+    <header className="fixed w-full z-10 flex justify-between md:justify-around p-5 mb-5 dark:bg-zinc-900 ">
       <h3 className="font-extrabold text-xl">
         <Link href={"/"}>J</Link>
       </h3>

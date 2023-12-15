@@ -4,10 +4,10 @@ import Experience from "./components/sections/Experience";
 
 export default function Home() {
   return (
-    <main>
+    <main className="container mx-auto">
       <HeroSection />
       <About />
-      {/* <SkillsSection /> */}
+      <SkillsSection />
       <Experience />
     </main>
   );
