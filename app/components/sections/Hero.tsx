@@ -15,7 +15,7 @@ const Hero = () => {
       </h1>
       <h2 className="text-3xl pt-5 mt-5">Senior Front-End Engineer</h2>
       <motion.a
-        href="/resume/resume.pdf"
+        href="/resume/Jekib Alam Haque's Resume.pdf"
         download={"Jekib Alam Haque Resume.pdf"}
         className="mt-10 border p-5 shadow-xl w-48 hover:shadow-slate-700 hover:scale-105"
         whileTap={{ scale: 0.85 }}
