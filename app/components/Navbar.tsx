@@ -10,7 +10,13 @@ const Navbar = () => {
       <div>
         <ul className="flex gap-9">
           <li>
-            <Link href={"/"}> Home</Link>
+            <Link href={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link href={"#experience"}>Work History</Link>
+          </li>
+          <li>
+            <Link href={"#contact"}>Contact</Link>
           </li>
         </ul>
       </div>

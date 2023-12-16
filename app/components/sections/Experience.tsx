@@ -1,5 +1,6 @@
 "use client";
 import { experiences } from "@/app/constants";
+import { IExperience } from "@/app/interfaces";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
@@ -10,10 +11,10 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   return (
-    <section className="md:pt-12 mx-auto">
+    <section className="md:pt-12 mx-auto" id="experience">
       <h2 className="text-5xl my-24 flex justify-center">Work Experience</h2>
       <VerticalTimeline>
-        {experiences.map((experience) => (
+        {experiences.map((experience: IExperience) => (
           <VerticalTimelineElement
             visible
             className="vertical-timeline-element--work"
@@ -23,7 +24,7 @@ const Experience = () => {
               color: "#fff",
             }}
             contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-            date={experience.date}
+            date={experience.serviceTimeline}
             iconStyle={{ background: experience.iconBg }}
             icon={
               <motion.div
@@ -38,8 +39,8 @@ const Experience = () => {
                 }}
               >
                 <Image
-                  src={experience.logo}
-                  alt={experience.company}
+                  src={experience.companyLogo}
+                  alt={experience.companyName}
                   width={5000}
                   height={5000}
                   quality={10}
@@ -67,23 +68,23 @@ const Experience = () => {
             >
               <div>
                 <h3 className="text-white text-[24px] font-bold">
-                  {experience.title}
+                  {experience.designation}
                 </h3>
                 <p
                   className="text-secondary text-[16px] font-semibold"
                   style={{ margin: 0 }}
                 >
-                  {experience.company}
+                  {experience.companyName}
                 </p>
               </div>
 
               <ul className="mt-5 list-disc ml-5 space-y-2">
-                {experience.points.map((point, index) => (
+                {experience.achievements.map((achievement, index) => (
                   <li
                     key={`experience-point-${index}`}
                     className="text-white-100 text-[14px] pl-1 tracking-wider"
                   >
-                    {point}
+                    {achievement}
                   </li>
                 ))}
               </ul>

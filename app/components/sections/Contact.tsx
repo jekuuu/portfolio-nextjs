@@ -58,7 +58,10 @@ const Contact: FC = () => {
   }
 
   return (
-    <section className="md:mt-12 mx-7 mt-20 flex flex-col items-center">
+    <section
+      className="md:mt-12 mx-7 mt-20 flex flex-col items-center mb-10"
+      id="contact"
+    >
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="bg-zinc-800 px-40 py-24 lg:w-2/4 shadow-2xl shadow-slate-700 rounded-xl"

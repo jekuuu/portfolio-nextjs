@@ -1,5 +1,6 @@
 "use client";
 import { technologies } from "@/app/constants";
+import { ITechnology } from "@/app/interfaces";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -20,7 +21,7 @@ const Skills = () => {
         Skills
       </motion.h2>
       <div className="mt-12 grid grid-cols-12">
-        {technologies.map((technology, index) => (
+        {technologies.map((technology: ITechnology, index) => (
           <motion.div
             key={`tech-${technology.id}`}
             className="col-span-3 md:col-span-1"

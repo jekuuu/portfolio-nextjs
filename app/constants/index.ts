@@ -1,6 +1,8 @@
-export const apiEndpoint = "/api/email";
+import { IExperience, ITechnology } from "../interfaces";
 
-export const technologies = [
+export const apiEndpoint: string = "/api/email";
+
+export const technologies: ITechnology[] = [
   { id: 1, name: "React JS", icon: "/images/tech/react.png" },
   { id: 2, name: "Redux Toolkit", icon: "/images/tech/redux.png" },
   { id: 3, name: "JavaScript", icon: "/images/tech/javascript.png" },
@@ -15,15 +17,15 @@ export const technologies = [
   { id: 12, name: "Kubernetes", icon: "/images/tech/kubernetes.png" },
 ];
 
-export const experiences = [
+export const experiences: IExperience[] = [
   {
     id: 1,
-    title: "Senior Engineering Lead",
-    company: "Peristent Systems (Client- Wayfair)",
-    logo: "/images/companies/persistent.png",
+    designation: "Senior Engineering Lead",
+    companyName: "Peristent Systems (Client- Wayfair)",
+    companyLogo: "/images/companies/persistent.png",
     iconBg: "#FFF",
-    date: "Feb 2023 - December 2023",
-    points: [
+    serviceTimeline: "Feb 2023 - December 2023",
+    achievements: [
       "Created an in-house web application that allows the client to configure A/B testing and access corresponding reports all within a single interface.",
       "Designed the UI with React, Typescript, and Sass based on Figma mocks",
       "Collaborated with the US team for tech discussions and code reviews",
@@ -34,12 +36,12 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "Associate",
-    company: "MSCI (Morgan Stanley Capital International)",
-    logo: "/images/companies/msci.png",
+    designation: "Associate",
+    companyName: "MSCI (Morgan Stanley Capital International)",
+    companyLogo: "/images/companies/msci.png",
     iconBg: "#FFF",
-    date: "July 2021 — November 2022",
-    points: [
+    serviceTimeline: "July 2021 — November 2022",
+    achievements: [
       "Transitioned older web applications to Microfrontends using React JS, Typescript, Nx and Sass",
       "Developed APIs for the frontend with Java Spring Boot",
       "Oversaw Azure deployment, release management, and PR validation pipelines",
@@ -49,14 +51,14 @@ export const experiences = [
   },
   {
     id: 3,
-    title: "Senior Associate Technology",
-    company: "Synechron (Client- HSBC)",
+    designation: "Senior Associate Technology",
+    companyName: "Synechron (Client- HSBC)",
     iconBg: "#FFF",
-    logo: "/images/companies/synechron.png",
-    date: "November 2019 — July 2021",
-    points: [
-      "Transformed HSBC's outdated Trade Finance application into a contemporary web app with React JS, Redux, and Node JS",
-      "Established and maintained a shared component library using Storybook, utilized company-wide",
+    companyLogo: "/images/companies/synechron.png",
+    serviceTimeline: "November 2019 — July 2021",
+    achievements: [
+      "Transformed HSBC's outserviceTimelined Trade Finance application into a contemporary web app with React JS, Redux, and Node JS",
+      "Established and maintained a shared component library using Storybook, utilized companyName-wide",
       "Addressed performance challenges in the live application",
       "Conducted triage sessions with the CGI backend and HSBC China's testing teams",
       "Managed deployments across various environments via Jenkins",
@@ -66,12 +68,12 @@ export const experiences = [
   },
   {
     id: 4,
-    title: "Senior Consultant",
-    company: "Alchemy Techsol (Client- Allstate)",
+    designation: "Senior Consultant",
+    companyName: "Alchemy Techsol (Client- Allstate)",
     iconBg: "#FFF",
-    logo: "/images/companies/alchemy.jpg",
-    date: "March 2019 — November 2019",
-    points: [
+    companyLogo: "/images/companies/alchemy.jpg",
+    serviceTimeline: "March 2019 — November 2019",
+    achievements: [
       "Created a web application tailored for car dealers throughout the United States, utilizing React JS, Redux, and Bootstrap",
       "Designed it responsively for cross-device compatibility with minimal adjustments",
       "Constructed backend APIs with .NET Core to retrieve data from Microsoft SQL Server",
@@ -81,12 +83,12 @@ export const experiences = [
   },
   {
     id: 5,
-    title: "Associate Consultant",
-    company: "Capgemini",
+    designation: "Associate Consultant",
+    companyName: "Capgemini",
     iconBg: "#FFF",
-    logo: "/images/companies/capgemini.png",
-    date: "April 2016 — March 2019",
-    points: [
+    companyLogo: "/images/companies/capgemini.png",
+    serviceTimeline: "April 2016 — March 2019",
+    achievements: [
       "Contributed to the development of web APIs for the system using .NET Core",
       "Deployed these APIs to Azure AppService and conducted thorough testing using tools such as Postman and Swagger,as well as authoring unit test cases",
       "Designed the entire application's user interface (using WPF), integrating various tools and accelerators to enhance delivery speed within an agile development model",
