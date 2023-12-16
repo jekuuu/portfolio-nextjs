@@ -1,3 +1,5 @@
+export const apiEndpoint = "/api/email";
+
 export const technologies = [
   { id: 1, name: "React JS", icon: "/images/tech/react.png" },
   { id: 2, name: "Redux Toolkit", icon: "/images/tech/redux.png" },
