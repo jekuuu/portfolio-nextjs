@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import { FC } from "react";
 import { useForm } from "react-hook-form";
 import { toast, ToastContainer } from "react-toastify";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import "react-toastify/dist/ReactToastify.css";
 
 export type FormData = {
@@ -15,10 +17,25 @@ export type FormData = {
   message: string;
 };
 
-const Contact: FC = () => {
-  const { register, handleSubmit, reset, formState } = useForm<FormData>();
+const schema = yup
+  .object({
+    name: yup.string().required(),
+    email: yup.string().email().required(),
+    message: yup.string().required(),
+  })
+  .required();
 
-  function onSubmit(data: FormData) {
+const Contact: FC = () => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+
+  function onSubmit(data: any) {
     fetch(apiEndpoint, {
       method: "POST",
       body: JSON.stringify(data),
@@ -66,9 +83,12 @@ const Contact: FC = () => {
           <input
             type="text"
             placeholder="Full Name"
-            className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+            className={`w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base text-gray-700 outline-none focus:border-cyan-600 focus:shadow-md ${
+              errors.name?.message && "border-rose-700 border-2"
+            }`}
             {...register("name", { required: true })}
           />
+          <p className="text-rose-500 mt-1">{errors.name?.message}</p>
         </div>
         <div className="mb-5">
           <label htmlFor="email" className="mb-3 block text-base text-white">
@@ -77,9 +97,10 @@ const Contact: FC = () => {
           <input
             type="email"
             placeholder="example@domain.com"
-            className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+            className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base text-gray-700 outline-none focus:border-cyan-600 focus:shadow-md"
             {...register("email", { required: true })}
           />
+          <p className="text-rose-500 mt-1">{errors.email?.message}</p>
         </div>
         <div className="mb-5">
           <label htmlFor="message" className="mb-3 block text-base text-white">
@@ -88,9 +109,10 @@ const Contact: FC = () => {
           <textarea
             rows={4}
             placeholder="Type your message"
-            className="w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+            className="w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base text-gray-700 outline-none focus:border-cyan-600 focus:shadow-md"
             {...register("message", { required: true })}
           ></textarea>
+          <p className="text-rose-500 mt-1">{errors.message?.message}</p>
         </div>
         <div>
           <motion.button
