@@ -24,6 +24,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    name: "Jekib Alam Haque",
+    url: "https://www.jekibalamhaque.in/",
+    image:
+      "https://www.jekibalamhaque.in/_next/image?url=%2Fimages%2Fprofile.jpg&w=3840&q=10",
+    sameAs: [
+      "https://www.linkedin.com/in/jekibalamhaque/",
+      "https://github.com/jekuuu",
+      "https://www.jekibalamhaque.in/",
+    ],
+  };
+
   return (
     <html lang="en">
       <head>
@@ -36,6 +50,10 @@ export default function RootLayout({
           <Analytics />
           <Footer />
         </>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );

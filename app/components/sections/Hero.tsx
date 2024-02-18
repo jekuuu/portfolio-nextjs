@@ -26,6 +26,7 @@ const Hero = () => {
         <Link
           href={"https://www.linkedin.com/in/jekibalamhaque/"}
           target="_blank"
+          rel="noreferrer"
           aria-label="Jekib Alam Haque's LinkedIn Profile URL"
         >
           <FontAwesomeIcon
@@ -36,6 +37,7 @@ const Hero = () => {
         <Link
           href={"https://github.com/jekuuu"}
           target="_blank"
+          rel="noreferrer"
           aria-label="Jekib Alam Haque's Github Profile URL"
         >
           <FontAwesomeIcon
