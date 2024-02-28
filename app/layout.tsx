@@ -10,14 +10,36 @@ import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Script from "next/script";
 config.autoAddCss = false; /* eslint-disable import/first */
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jekib Alam Haque | Portfolio",
-  description: `As a Senior Engineering Lead at Persistent Systems, I develop and design web applications for clients using cutting-edge technologies such as React, TypeScript. I collaborate with the US team for technical discussions and code reviews, and establish reusable components for code efficiency and future maintenance. I also implement unit tests for stability and bug reduction, and deploy the applications using Docker and Kubernetes.
-  I have over seven years of experience in web development, working with different JavaScript frameworks and libraries, such as React, Next, Redux, and Node. I have transitioned older web applications to microfrontends, developed APIs with Java Spring Boot, and overseen release management and PR validation pipelines. I have also contributed to test case creation, elevating test coverage to over 90%, and addressed performance challenges and vulnerabilities in live applications. I hold a Bachelor of Engineering in Computer Science and Engineering from Gauhati University. I am passionate about creating user-friendly, scalable, and secure web solutions that meet the needs and expectations of the clients.`,
+  title: "Jekib Alam Haque | Portfolio | Senior React Developer",
+  description: `Jekib Alam Haque's portfolio. He is a senior frontend engineer with more than 7 years of industry experienced.`,
+  authors: [{ name: "Jekib Alam Haque" }],
+  keywords: [
+    "Jekib",
+    "Jekib Alam Haque",
+    "Senior React Developer",
+    "portfolio",
+    "Nextjs",
+    "Javascript",
+    "Html",
+    "Css",
+    "Tailwind Css",
+  ],
+  openGraph: {
+    type: "profile",
+    title: "Jekib Alam Haque | Portfolio | Senior React Developer",
+    description: `Jekib Alam Haque's portfolio. He is a senior frontend engineer with more than 7 years of industry experienced.`,
+    firstName: "Jekib",
+    countryName: "India",
+    url: "https://www.jekibalamhaque.in/",
+    lastName: "haque",
+    images: ["/images/profile.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -55,6 +77,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Script src="./clarity.js" strategy="lazyOnload" />
       </body>
     </html>
   );
