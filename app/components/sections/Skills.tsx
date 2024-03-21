@@ -21,21 +21,12 @@ const Skills = () => {
         Skills
       </motion.h2>
       <div className="mt-12 grid grid-cols-12">
-        {technologies.map((technology: ITechnology, index) => (
+        {technologies.map((technology: ITechnology) => (
           <motion.div
             key={`tech-${technology.id}`}
-            className="col-span-3 md:col-span-1"
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: index * 0.5,
-                type: "spring",
-              },
-            }}
+            className="col-span-3 md:col-span-1 cursor-pointer"
             whileHover={{
-              scale: 1.2,
+              scale: 1.3,
               transition: { duration: 0.5 },
             }}
           >
