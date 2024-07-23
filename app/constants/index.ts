@@ -20,6 +20,19 @@ export const technologies: ITechnology[] = [
 export const experiences: IExperience[] = [
   {
     id: 1,
+    designation: "Lead Experience Engineer",
+    companyName: "Publicis Sapient (Client- Optum)",
+    companyLogo: "/images/companies/publicis-sapient.webp",
+    iconBg: "#FFF",
+    serviceTimeline: "Apr 2024 - Present",
+    achievements: [
+      "Participated in training sessions covering Next.js, GraphQL, and NFRs related to Performance and Accessibility.",
+      'Received a Certificate of Achievement upon completing the "NFR Web Specialist L1" learning program, gaining essential skills in NFR Fundamentals such as Performance, Accessibility, Security, and SEO.',
+      "Participated in a three-week instructor-led training program for React Native and developed a capstone project.",
+    ],
+  },
+  {
+    id: 2,
     designation: "Senior Engineering Lead",
     companyName: "Peristent Systems (Client- Wayfair)",
     companyLogo: "/images/companies/persistent.png",
@@ -35,7 +48,7 @@ export const experiences: IExperience[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     designation: "Associate",
     companyName: "MSCI (Morgan Stanley Capital International)",
     companyLogo: "/images/companies/msci.png",
@@ -50,7 +63,7 @@ export const experiences: IExperience[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     designation: "Senior Associate Technology",
     companyName: "Synechron (Client- HSBC)",
     iconBg: "#FFF",
@@ -67,7 +80,7 @@ export const experiences: IExperience[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     designation: "Senior Consultant",
     companyName: "Alchemy Techsol (Client- Allstate)",
     iconBg: "#FFF",
@@ -82,7 +95,7 @@ export const experiences: IExperience[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     designation: "Associate Consultant",
     companyName: "Capgemini",
     iconBg: "#FFF",
